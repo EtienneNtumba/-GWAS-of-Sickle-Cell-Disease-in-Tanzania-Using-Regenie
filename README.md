@@ -77,13 +77,13 @@ plink --bfile "$OUTDIR/step2_ld_pruned" \
 - Efficient for **large-scale genetic data**.
 - Uses **stepwise ridge regression**, reducing confounding by population structure.
 
-  # 🧬 GWAS Analysis with REGENIE - Installation & Visualization Guide
+  #### 🧬 GWAS Analysis with REGENIE - Installation & Visualization Guide
 
 This repository provides a **step-by-step guide** on how to **install, run, and visualize GWAS results using REGENIE**.
 
 ---
 
-## 🚀 3.1. Installing REGENIE
+### 🚀 3.1. Installing REGENIE
 
 You can install **REGENIE** using **Docker** (recommended) or **Conda**.
 
