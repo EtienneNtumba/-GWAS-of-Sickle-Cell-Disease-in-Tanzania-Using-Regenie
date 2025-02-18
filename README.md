@@ -132,4 +132,4 @@ The top SNPs from the analysis indicate significant associations.
 This GWAS study successfully identified **significant SNPs** for **Sickle Cell Disease in Tanzania**, demonstrating the effectiveness of **Regenie** in handling large-scale genetic data.
 
 ---
-# -GWAS-of-Sickle-Cell-Disease-in-Tanzania-Using-Regenie
+
