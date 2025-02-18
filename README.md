@@ -77,6 +77,49 @@ plink --bfile "$OUTDIR/step2_ld_pruned" \
 - Efficient for **large-scale genetic data**.
 - Uses **stepwise ridge regression**, reducing confounding by population structure.
 
+  # 🧬 GWAS Analysis with REGENIE - Installation & Visualization Guide
+
+This repository provides a **step-by-step guide** on how to **install, run, and visualize GWAS results using REGENIE**.
+
+---
+
+## 🚀 3.1. Installing REGENIE
+
+You can install **REGENIE** using **Docker** (recommended) or **Conda**.
+
+### 📌 Option 1: Install REGENIE using Docker
+Docker is the easiest method as it avoids dependency issues.
+
+#### 🔹 Step 1: Pull the REGENIE Docker Image
+```bash
+docker pull rgcgithub/regenie
+
+docker run --rm rgcgithub/regenie regenie --help
+
+## 📌 Option 2: Install REGENIE using Conda
+
+If you prefer to install REGENIE locally, use Conda.
+
+🔹 Step 1: Create a Conda Environment
+
+conda create -n regenie_env -y
+conda activate regenie_env
+
+🔹 Step 2: Install Dependencies
+
+conda install -c conda-forge cmake make gcc libgomp htslib boost -y
+
+🔹 Step 3: Download and Compile REGENIE
+
+git clone https://github.com/rgcgithub/regenie.git
+cd regenie
+make
+
+🔹 Step 4: Verify the Installation
+
+./regenie --help
+
+
 ### **Step 1: Null Model Fitting**
 ```bash
 docker run --rm -v ~/Documents/Emile_Analysis/Data/resultats/qc_results:/data -w /data regenie regenie \
