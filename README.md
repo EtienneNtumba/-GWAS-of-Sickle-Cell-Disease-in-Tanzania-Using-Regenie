@@ -120,6 +120,12 @@ make
 ./regenie --help
 
 
+**Key Parameters:**
+- **`--step 1`**: Builds the null model (ridge regression).
+- **`--lowmem`**: Optimizes memory for large datasets.
+- **`--bsize 1000`**: Block size for model fitting.
+
+
 ### **Step 1: Null Model Fitting**
 ```bash
 docker run --rm -v ~/Documents/Emile_Analysis/Data/resultats/qc_results:/data -w /data regenie regenie \
@@ -131,12 +137,6 @@ docker run --rm -v ~/Documents/Emile_Analysis/Data/resultats/qc_results:/data -w
   --bsize 1000 \
   --out step1
 ```
-
-**Key Parameters:**
-- **`--step 1`**: Builds the null model (ridge regression).
-- **`--lowmem`**: Optimizes memory for large datasets.
-- **`--bsize 1000`**: Block size for model fitting.
-
 ### **Step 2: Association Testing**
 ```bash
 docker run --rm -v ~/Documents/Emile_Analysis/Data/resultats/qc_results:/data -w /data regenie regenie \
